@@ -16,7 +16,7 @@ func main() {
 	// Get database connection string from environment
 	connStr := os.Getenv("DATABASE_URL")
 	if connStr == "" {
-		connStr = "postgres://postgres:postgres@localhost/notifications?sslmode=disable"
+		connStr = "postgres://postgres:kavya@localhost/notifications?sslmode=disable"
 		log.Printf("Using default DATABASE_URL: %s", connStr)
 	}
 
